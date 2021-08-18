@@ -8,7 +8,6 @@ inputX = read(inputX)
 textutils.slowPrint("Enter y value: ")
 inputY = read(inputY)
 
-os.execute("clear")
 textutils.slowPrint("It do be digging tho")
 
 function refuel()
