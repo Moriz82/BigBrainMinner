@@ -1,6 +1,6 @@
 --https://tweaked.cc/module/turtle.html
 
-textutils.slowPrint("Make sure fuel is in slot 1, and chests are in slot 2")
+textutils.slowPrint("Make sure fuel is in slot 1\nMake sure chests are in slot 2")
 
 textutils.slowPrint("Enter 2d x and y values")
 textutils.slowPrint("Enter x value: ")
