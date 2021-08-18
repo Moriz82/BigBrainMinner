@@ -1,3 +1,5 @@
+--https://tweaked.cc/module/turtle.html
+
 textutils.slowPrint("It do be digging tho")
 
 function refuel()
