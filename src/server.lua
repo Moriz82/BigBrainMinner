@@ -25,6 +25,7 @@ while true do
             users[id] = "guest-"..id
             len = #ids
             table.insert(ids, id)
+            rednet.send(id, "welcome")
         end
     end
     if not users[id] == nil then

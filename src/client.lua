@@ -1,10 +1,20 @@
 print("Enter server id: ")
 hostId = tonumber(read(hostId))
-print("Enter password: ")
-pass = tonumber(read(pass))
 
 rednet.open("top")
-rednet.send(hostId, password)
+
+while true do
+    print("Enter password: ")
+    password = read(password)
+    if string.lower(password) == "/exit" then
+        os.exit()
+    end
+    rednet.send(hostId, password)
+    id,msg = rednet.receive()
+    if msg == "welcome" then
+        break
+    end
+end
 
 co = coroutine.create(function ()
     while true do
